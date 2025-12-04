@@ -24,9 +24,9 @@ class MyClass:
         
 obj1=MyClass()
 obj1.disp1()
-obj1.__disp()
-print(obj1.__a)
-print(MyClass.__a)
+#obj1.__disp()
+#print(obj1.__a)
+#print(MyClass.__a)
 """
 to access a private variable call self.__a within a public method
 to ccess a private method, create another pblic method and call this private method inside the public method"""

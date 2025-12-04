@@ -38,3 +38,20 @@ for i in tuple1:
     #print("values are {}".format(i)) it will print values are 1 values are abc
     #if we want to print the values it always adds next line by default. Give end="" to make it print in one line
     print(i,end=" ")
+    
+person = "Alice", 25, "Engineer"
+print(person)#tuple packing
+
+a, *b = 1, 2, 3, 4, 5
+print(a)  # 1
+print(b)  # [2, 3, 4, 5]
+
+person = ('Alice', 25, 'Engineer')
+name, age, job = person
+
+print(name)  # Alice
+print(age)   # 25
+print(job)   # Engineer
+
+nums = (1, 2, 3)
+print(*nums)

@@ -5,13 +5,14 @@ name1="John"
 name2="C"
 name3='C'
 name4 = str("test")
-print (name,name1,name2,name3,name4)
+name5 = str()
+print (name,name1,name2,name3,name4,name5)
 #string is immutable, once its created it cannot be modified and if you try to modify it will be different memory address.We can find the memory address with id)
 str1 = "welcome"
 str2 = "welcome"
-print(id(str1),id(str2))
+print(id(str1),id(str2))#133106970401872 133106970401872
 str2 = str2+"please"
-print(id(str1),id(str2))
+print(id(str1),id(str2))#133106970401872 133106970442608
 #operation on string *,+
 str3 = str1 +"to berlin"
 print(str3)
@@ -23,6 +24,8 @@ str="Welcome"
 print(str[0:3])#Wel
 print(str[1:3])#el
 print(str[1:])#elcome
+print(str[1:-1])#elcom
+print("reveresed string",str[::-1])#elcom
 print(str[:5])#Welco
 #ord and chr functions
 print(ord('A'))#char to ascii
@@ -48,6 +51,7 @@ print(keyword.iskeyword)
 print(s.isidentifier())#not a numer so false
 print(s.isalpha())
 #searching for substring
+print("searching for substring")
 print("test and learning python".startswith("test"));
 print("test and learning python".endswith("test"));
 print("test and learning python".endswith("python"));#this is case sensitive search
@@ -67,7 +71,9 @@ s="Python"
 for i in s:
     #print(s)prints python 6 times
     print(i) # prints each letter of python
-
+#Number of unique characters
+testingstring="Number of unique characters"
+print(len(set(testingstring)))
 
 
 

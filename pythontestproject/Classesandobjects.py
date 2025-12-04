@@ -65,7 +65,7 @@ print("obj3 ")
 obj3=MyClass1();
 obj3.add()
 #unnamed object and this concept is there in java also
-MyClass1.add()
+MyClass1.add();#for this to work you need to make it static
         
 
 

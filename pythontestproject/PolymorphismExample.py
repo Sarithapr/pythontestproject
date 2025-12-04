@@ -15,7 +15,7 @@ class C(NameMethodOverriding):
        return self.__a
         
 obj1 = C()
-print(obj1.__a)
+#print(obj1.__a)AttributeError: 'C' object has no attribute '__a'
 print(obj1.greeting())
 
 #Its is not possible to overload like in java but we can do as elow

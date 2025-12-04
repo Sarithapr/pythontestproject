@@ -41,13 +41,32 @@ file=open('/home/rharidas/Documents/pythonfilehandling','a')
 file.write('again writin \n')
 file.close()
 
-#reading using loop
 
+file=open('/home/rharidas/Documents/pythonfilehandling','a+')
+#print(file.read())
+file.write('again writinsfdjshfdkjsfhkjsfhkjfskdfhsdkfhskfdhsdjk \n')
+file.close()
+#reading using loop
+print("print line by line")
 file=open('/home/rharidas/Documents/pythonfilehandling','r')
 for i in file:#print line by line
     print(i)
 file.close()
+"""
+Use 'a' → just append (write only)
 
+Use 'a+' → append and read (you must .seek(0) before reading)
+
+Mode    Can Read?    Can Write?    File Created if Missing?    Pointer Starts At    Overwrites Existing Data?
+'a'    ❌ No    ✅ Yes    ✅ Yes    End of file    ❌ No
+'a+'    ✅ Yes    ✅ Yes    ✅ Yes    End of file    ❌ No
+
+with open('log.txt', 'a+') as f:
+    f.write('World\n')
+    f.seek(0)
+    print(f.read())
+
+"""
 
 
 

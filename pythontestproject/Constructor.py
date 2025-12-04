@@ -6,13 +6,27 @@ Created on Oct 22, 2025
 class ConstructorEg:
     def m1(self):
         print("hello")
+        print(self.testvar)
     #construcor starts with __init and init is a keyword
-    def __init__(self):
+    def __init__(self,testvar):
+        self.testvar=testvar
         print("inside constructor")
-obj1=ConstructorEg();#prints "inside constructor
+obj1=ConstructorEg(6);#prints "inside constructor
 obj1.m1()    
 
-#converting local variables to class variables
+class ConstructorEgtest:
+    def m1(self):
+        print("hello")
+        print(self.testvar)
+    #construcor starts with __init and init is a keyword
+    def __init__(self):
+        self.testvar=6
+        print("inside constructor")
+        print(self.testvar)
+obj1=ConstructorEgtest();#prints "inside constructor
+obj1.m1()    
+
+print("converting local variables to class variables")
 class ConstructorEg1:
     #doing the same below with constructor
     def __init__(self,v1,v2):
@@ -30,7 +44,7 @@ obj1=ConstructorEg1(1,2);#prints "inside constructor
 #obj1.values(1, 2) 
 obj1.add()
 
-#calling one method inside another
+print("calling one method inside another")
 class ConstructorEg2:
     def m1(self):
         print("hello")
@@ -38,19 +52,19 @@ class ConstructorEg2:
     
     def m2(self,a):
         print("inside constructor",a)
-obj3=ConstructorEg2();#prints "inside constructor
+obj3=ConstructorEg2();
 obj3.m1()
 
-#initilaizing a constructor
+print("initilaizing a constructor")
 class ConstructorEg4:
     name="new test"
     def __init__(self,name):
         print(name)#local variable
         print(self.name)#class variable
-obj4=ConstructorEg4("test")
+obj4=ConstructorEg4("6524325")
 
 
-#Example
+print("Example")
 class Emp:
     def __init__(self,eid,ename,sal):
         self.eid=eid
@@ -93,6 +107,7 @@ class Emp1:
         return("eid:%d ename:%s sal:%g" %(self.eid,self.ename,self.sal))
         
 objemp=Emp1(1,"test",35000)
+print("__STR__")
 print(objemp)
 
 class test:

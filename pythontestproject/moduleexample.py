@@ -2,8 +2,11 @@
 Created on Oct 23, 2025
 
 @author: rharidas
+
 '''
+import sys,os
 from functionsexample import *
+from pip._internal.utils.filesystem import directory_size
 sum(2, 4)
 """
 If functionsexample andfunctionsexample1 module has same fucnion sum then write as below so that conflict is reolved
@@ -29,3 +32,13 @@ if its methods with self inside class like below then its not shown.
 class a:
 def add()self):
 """
+#dir(os) gives name of different fucntions part of os module
+"""
+os.getcwd()
+os.listdir()to get files in particular directory
+dir(modulename) gives all build in methods or mafic methods+custom functions inside the module
+module are searched in cwd,path in windows and anything specified in python when installed
+import sys
+sys.path gives the moddules in the path which python searches
+"""
+print(sys.path)

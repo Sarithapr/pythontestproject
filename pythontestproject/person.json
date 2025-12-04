@@ -1,0 +1,23 @@
+[
+    {
+        "name": "test",
+        "age": 40,
+        "haschild": false,
+        "role": [
+            "qa",
+            "dev"
+        ]
+    },
+    {
+        "name": "sd",
+        "age": 41
+    },
+    {
+        "name": "sdsdsd",
+        "age": 40
+    },
+    {
+        "name": "ty",
+        "age": 24
+    }
+]

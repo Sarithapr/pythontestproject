@@ -50,10 +50,22 @@ print(sampledict.get("sardsfitha", "not tere"))
 print(sampledict.popitem())#randonly prints the valyes to be removed and removes a value from dictionry
 print(sampledict)
 print(sampledict.clear())
-print(sampledict5.pop('aaa'))
+print(sampledict5.pop('aaa'))#similar to remive in list
 print(sampledict5)
+#merging dictionaries
+a={'a':1}
+b={'b':1}
+a.update(b)
+print(a)
 
 
+vm_list = [
+{'id': 'vm-123', 'status': 'running', 'region': 'us-east-1'},
+{'id': 'vm-456', 'status': 'stopped', 'region': 'us-east-1'},
+{'id': 'vm-789', 'status': 'running', 'region': 'eu-central-1'}
+]
+
+print((filter(lambda vm_list:vm_list['status'] if vm_list['status'] == "running")))
 
 
 
