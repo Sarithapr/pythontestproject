@@ -66,6 +66,7 @@ settingValue1(10,j=3000)
 #AFter keyword we cant pass positional argument. Once the keyword starts all should be keyword so below will error out
 #so position if any should be first argument followed by keyword
 #settingValue1(i=10,3000)#SyntaxError: positional argument follows keyword argument
+#parameter without a default then parameter with a default should be the order
 
 # we can return multiple values in pythn function and those are treated as tuple
 print("next example")
